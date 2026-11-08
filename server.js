@@ -3,7 +3,7 @@ const connectDB = require("./db");
 const dns = require("node:dns")
 
 dns.setServers(["8.8.8.8"]);
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 
 async function startServer() {
